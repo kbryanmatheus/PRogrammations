@@ -64,9 +64,8 @@ class ProdutoCrud{
 
     public function updateProduto(Produto $produto){
 
-        $sql = "UPDATE produto SET nome_produto = '".$produto->getNome()."', descricao_produto = '".$produto->getDescricao()."', foto_produto ='".$produto->getFoto()."', preco_produto ='
-        ".$produto->getPreco();
-
+        $sql = "UPDATE produto SET nome_produto ='".$produto->getNome()."', descricao_produto ='".$produto->getDescricao()."', preco_produto ='
+        ".$produto->getPreco()."' WHERE id_produto =".$produto->getId();
         try{
             $this->conexao->exec($sql);
         }catch (PDOException $e){

@@ -12,7 +12,7 @@
 
     <ul>
         <li><a href="index.php">Início</a></li>
-        <li><a href="app/controller/categoria.php"> Categorias </a></li>
+        <li><a href="app/controller/categoria.php">Categorias </a></li>
         <li><a href="app/controller/produto.php"> Produtos </a></li>
 
     </ul>

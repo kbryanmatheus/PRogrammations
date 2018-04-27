@@ -1,4 +1,4 @@
-<form method="post" action="produto.php?action=alterar">
+<form method="post" action="produto.php?action=alterar&id=<?= $produto->getId()?>">
     <input type="hidden" name="id" value="<?= $produto->getId() ?>">
     <label for="nome">Nome</label>
     <input type="text" name="nome" id="nome" value="<?= $produto->getNome() ?>">
@@ -6,8 +6,8 @@
     <label for="descricao">Decrição</label>
     <textarea name="descricao" id="descricao" cols="30" rows="10"><?= $produto->getDescricao() ?></textarea>
     <br>
-    <input type="submit" name="gravar" value="Gravar">
     <label for="preco">Preço</label>
     <input type="text" name="nome" id="nome" value="<?= $produto->getPreco() ?>">
     <br>
+    <input type="submit" name="gravar" value="Gravar">
 </form>

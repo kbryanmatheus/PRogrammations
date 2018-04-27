@@ -59,7 +59,7 @@ class CategoriaCrud{
 
     public function updateCategoria(Categoria $cat){
         // MONTA O TEXTO
-        $sql = "UPDATE categoria SET nome_categoria = '".$cat->getNome()."', descricao_categoria = '".$cat->getDescricao()."' WHERE id_categoria =".$cat->getId();
+        $sql = "UPDATE categoria SET nome_categoria ='".$cat->getNome()."', descricao_categoria ='".$cat->getDescricao()."' WHERE id_categoria =".$cat->getId();
 
         try{
             return $this->conexao->exec($sql);

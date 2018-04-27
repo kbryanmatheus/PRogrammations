@@ -56,14 +56,14 @@ switch($action){
             include('../view/produtos/alterar.php');
             include('../view/template/rodape.php');
         }else{
-            $produto = new Produto($_POST['id'], $_POST['nome'], $_POST['descricao'],$_POST['preco'], $_POST['foto']);
+            $codigo = $_GET['id'];
+            $produto = new Produto($codigo, $_POST['nome'], $_POST['descricao'],$_POST['preco'], '');
             $crud = new ProdutoCrud();
-            $res = $crud->updateProduto($produto);
+            $crud->updateProduto($produto);
             //echo $res;
             header('Location: produto.php');
         }
         break;
-
     case 'excluir':
 
         $crud = new ProdutoCrud();

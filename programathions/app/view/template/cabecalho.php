@@ -1,18 +1,21 @@
 <html>
 <head>
 
-    <title>Lista de Categorias</title>
+    <title>Lista</title>
     <link rel="stylesheet" href="../view/template/style.css">
 
 </head>
 <div class="cabecalho">
-    <h1>Lista de Categorias</h1>
+    <h1>Lista </h1>
 
         <ul>
             <li><a href="../../index.php">Início</a></li>
-            <li><a href="../../controller/categoria.php"> Categorias </a></li>
-            <li><a href="../../controller/produto.php"> Produtos </a></li>
+            <li><a href="categoria.php"> Categorias </a></li>
+            <li><a href="produto.php"> Produtos </a></li>
+            <li><a href="produto.php?action=inserir"> Insert Produtos </a></li>
+
         </ul>
+
 </div>
 
 <body>
